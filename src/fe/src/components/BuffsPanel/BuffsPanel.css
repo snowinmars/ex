@@ -1,0 +1,77 @@
+.buffs-panel {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.buffs-panel h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.no-buffs {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+.buffs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.buff-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #ccc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buff-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.buff-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.buff-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.buff-name {
+  font-weight: 600;
+  font-size: 12px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buff-stacks {
+  font-size: 11px;
+  color: #666;
+  font-weight: bold;
+}
+
+.buff-duration {
+  font-size: 10px;
+  color: #888;
+  background: rgba(0,0,0,0.05);
+  padding: 2px 4px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 2px;
+}

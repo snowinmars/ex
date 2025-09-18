@@ -1,0 +1,97 @@
+/* client/src/components/CharacterPanel.css */
+.character-panel {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.properties-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.property-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.property-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.property-value-text {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.property-visualization {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.value-bar-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.value-bar {
+  flex: 1;
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.value-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.status-normal .value-fill { background: #4caf50; }
+.status-warning .value-fill { background: #ff9800; }
+.status-critical .value-fill { background: #f44336; }
+
+.velocity-indicator {
+  min-width: 80px;
+  text-align: right;
+}
+
+.velocity-value {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #f5f5f5;
+}
+
+.velocity-positive {
+  color: #f44336;
+  background: #ffebee !important;
+}
+
+.velocity-negative {
+  color: #4caf50;
+  background: #e8f5e8 !important;
+}
+
+.velocity-neutral {
+  color: #666;
+  background: #f5f5f5 !important;
+}

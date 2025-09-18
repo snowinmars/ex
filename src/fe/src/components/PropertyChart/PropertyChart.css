@@ -1,0 +1,27 @@
+/* client/src/components/PropertyChart.css */
+.property-chart {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chart-info {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mini-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.mini-charts .recharts-wrapper {
+  background: #f8f9fa;
+  border-radius: 4px;
+  padding: 5px;
+}
